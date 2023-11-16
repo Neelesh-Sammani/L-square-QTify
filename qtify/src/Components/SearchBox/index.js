@@ -4,7 +4,7 @@ import './Search.css';
 
 const SearchBox = () => {
     return <form className="form">
-        <input placeholder='Search an album of your choice' className="input"/>
+        <input placeholder='Search a album of your choice' className="input"/>
         <button className="searchIcon">
         <SearchIcon width={20} height={20} />
         </button>
