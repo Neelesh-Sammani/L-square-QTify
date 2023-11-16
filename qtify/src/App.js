@@ -21,7 +21,7 @@ function App() {
     .then(({data}) => {
       setNewAlbums(data);
     })
-  })
+  },[]);
 
   return (
     <>
