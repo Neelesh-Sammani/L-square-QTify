@@ -1,0 +1,8 @@
+.tab{
+    color: var(--css-white) !important;
+    font-weight: bold;
+}
+
+.tab-div{
+    margin-bottom: 15px;
+}
