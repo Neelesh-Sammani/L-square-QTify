@@ -1,0 +1,19 @@
+.Faq-container{
+    margin-top: 20px;
+    margin-left:200px;
+    margin-right: 200px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.question{
+    background-color: var(--css-black) !important;
+    border-radius: 5px !important;
+    color: white !important;
+}
+
+.heading{
+    text-align: center;
+    color: white !important;
+}

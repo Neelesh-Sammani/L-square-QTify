@@ -4,7 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import './filter.css';
 
-const FilterSection = ({title,data,filters,executeFilter,navId}) => {
+const FilterSection = ({title,data,navId,filters,executeFilter}) => {
     const [selectedTab,setSelectedTab] = useState(0);
 
     return <div className="section">

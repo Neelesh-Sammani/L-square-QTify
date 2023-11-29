@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import HeroSection from './Components/HeroSection';
 import Section from './Components/Section';
 import FilterSection from './Components/FilterSection';
+import Faq from './Components/FAQsection';
 import React from 'react';
 
 
@@ -47,7 +48,7 @@ function App() {
     <HeroSection />
     <Section title="Top Albums" data={topAlbums} navId="ta" />
     <Section title="New Albums" data={newAlbums} navId='na' />
-    <FilterSection title="Songs" data={filteredSongs} filters={genres}
+    <FilterSection title="Songs" data={filteredSongs}  navId='s' filters={genres}
     executeFilter={(genre)=>{
       if(genre==='all'){
         setFilteredSongs(songs);
@@ -55,7 +56,8 @@ function App() {
       else{
         setFilteredSongs(songs.filter(song => song.genre.key===genre));
       }
-    }} navId='s' />
+    }} />
+    <Faq />
     </>
   );
 }
