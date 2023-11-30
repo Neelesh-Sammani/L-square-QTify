@@ -15,7 +15,7 @@ const Section = ({title,data,navId}) => {
             </div>
             {isCollapsed?<Carousel data={data} navId={navId} />:
             <div className="card-container">
-                {data.map(cardData => <Card key={cardData.id} imgSrc={cardData.image} followersCount={cardData.follows} label={cardData.title} />)}
+                {data.map(cardData => <Card key={cardData.id} imgSrc={cardData.image} followersCount={cardData.follows} label={cardData.title} numOfSongs={cardData.songs?cardData.songs.length:""} />)}
             </div>}
         </div>
     )
